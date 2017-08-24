@@ -20,7 +20,7 @@ export default class App extends Component {
   generateComputerPick(){
     let possiblePicks = ['rock', 'paper', 'scissor'];
     // Pick a random number between 0 and 2 and round it to nearest whole number
-    let randomNumber = Math.floor(Math.random() * 3 - 0 + 0);
+    let randomNumber = Math.floor(Math.random() * (3 - 0)) + 0;
     this.setState({computerPick: possiblePicks[randomNumber]}, function(){
       this.pickWinner();
     })
