@@ -1,14 +1,14 @@
 ## ROCK, PAPER, SCISSORS:
   The final solution is in the solutions folder
 
-### Step:    
+### STEP:    
 Create a wireframe.   What do we want our final app to look like?
 
 For this app, we will have a top section that displays 3 images (rock, paper, and scissors).  We want the user to be able to click on one of these images to select their choice.  After an image is clicked we will determine whether the user beat the computer or not and display the result.
 
 ****As a BONUS, we will add a CSS animation library to animate the user's selected image.
 
-### Step:
+### STEP:
 Determine what we need to keep track of in order to build this application?  
  
  Rules of the Game:
@@ -23,7 +23,7 @@ Variables:
 
 
 
-### Step:
+### STEP:
 Setup our component to store the variables that we will need for the application. React uses an object variable called 'state' to keep track of the current variables used within a component.  Any time the 'state' is changed, React will re-render the DOM (view of the application).  State is declared and initialized in the constructor function.
 
 ```javascript
@@ -49,7 +49,7 @@ export default class App extends Component {
 ```
 
 
-### Step:
+### STEP:
 Create the display part of our JSX code in order to display our 3 images side by side and the result of our game below these images.  JSX stand for Javascript XML.  JSX allows us to mix HTML code with Javascript code in order to render a React application.
 
 ```javascript
