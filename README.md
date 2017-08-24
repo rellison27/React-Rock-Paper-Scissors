@@ -250,7 +250,9 @@ We want to add an animation to our image when the user makes their choice.  To d
 
 Copy and paste this into your index.html:
 
+```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+```
 
 
 Add an 'animatedClass' variable to our state in the constructor and set it equal to 'animated rotateIn'.  We now want to set up a conditional className on each of the images that will apply this class to whichever image the user picks.  We use a ternary conditional statement to apply this class.  
