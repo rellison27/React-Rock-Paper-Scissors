@@ -161,7 +161,7 @@ export default class App extends Component {
 
  
 ### STEP:  
-We need to create the 'pickWinner' function that will return the correct user depending on the user and computer pick variables that we have in our state object.  In tht funciton we will use a series of if, else if, else conditional statements to return the winner.  We will update our result variable in our state object and after a half second we will reset the userPick and computerPick to null so that we can play again.
+We need to create the 'pickWinner' function that will return the correct user depending on the user and computer pick variables that we have in our state object.  In that function we will use a series of if, else if, else conditional statements to return the winner.  We will update our result variable in our state object and after a half second we will reset the userPick and computerPick to null so that we can play again.
 
 ```javascript
  export default class App extends Component {
