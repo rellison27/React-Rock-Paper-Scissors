@@ -1,14 +1,14 @@
-##ROCK, PAPER, SCISSORS:
+## ROCK, PAPER, SCISSORS:
   The final solution is in the solutions folder
 
-###Step:    
+### Step:    
 Create a wireframe.   What do we want our final app to look like?
 
 For this app, we will have a top section that displays 3 images (rock, paper, and scissors).  We want the user to be able to click on one of these images to select their choice.  After an image is clicked we will determine whether the user beat the computer or not and display the result.
 
 ****As a BONUS, we will add a CSS animation library to animate the user's selected image.
 
-###Step:
+### Step:
 Determine what we need to keep track of in order to build this application?  
  
  Rules of the Game:
@@ -23,7 +23,7 @@ Variables:
 
 
 
-###Step:
+### Step:
 Setup our component to store the variables that we will need for the application. React uses an object variable called 'state' to keep track of the current variables used within a component.  Any time the 'state' is changed, React will re-render the DOM (view of the application).  State is declared and initialized in the constructor function.
 
 ```javascript
@@ -49,7 +49,7 @@ export default class App extends Component {
 ```
 
 
-###Step:
+### Step:
 Create the display part of our JSX code in order to display our 3 images side by side and the result of our game below these images.  JSX stand for Javascript XML.  JSX allows us to mix HTML code with Javascript code in order to render a React application.
 
 ```javascript
@@ -116,7 +116,7 @@ export default class App extends Component {
 ```
 
 
-###STEP:
+### STEP:
 We need to create a click event handler to get the user's pick depending on which image they click.  React gives us built in event handler methods to use within our application.  In this case we will use the 'onClick' event handler on each of the 3 images to let us save the user's pick when a user clicks an image.  When the user clicks on an image we will run a function that we will call 'submitUserPick' that will take an argument of the user's pick and update the 'state' of our application to match the user's pick.  And then we will call the 'generateComputerPick' function that we just defined.  
 
 ```javascript
@@ -220,7 +220,7 @@ We need to create the 'pickWinner' function that will return the correct user de
 }
 ```
 
-###STEP:
+### STEP:
 Here will will display the result of the pickWinner function to the user.  
 
 ```javascript
@@ -245,7 +245,7 @@ export default class App extends Component {
 ```
 
 
-###**BONUS STEP:
+### **BONUS STEP:
 We want to add an animation to our image when the user makes their choice.  To do this we will add a css library to the top of our index.html page in our public directory.
 
 Copy and paste this into your index.html:
@@ -292,5 +292,5 @@ export default class App extends Component {
 ```
 
 
-###**BONUS STEP:
+### **BONUS STEP:
 Style your app to look more appealing using index.css.
